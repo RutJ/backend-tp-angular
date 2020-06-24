@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(cors({origin: 'http://localhost:4200'}));
 
 //Cargamos el modulo de direccionamiento de rutas para puntos
-//app.use('/api/puntos', require('./routes/puntos.route'));
-//app.use('/api/sectores', require('./routes/sectores.route'));
+app.use('/api/pasajes', require('./routes/pasajes.route'));
+app.use('/api/adelantos', require('./routes/adelantos.route'));
 app.use('/api/asistentes', require('./routes/asistentes.route'));
 app.use('/api/empresas', require('./routes/empresas.route'));
 app.use('/api/mensaje', require('./routes/mensaje.route'));
